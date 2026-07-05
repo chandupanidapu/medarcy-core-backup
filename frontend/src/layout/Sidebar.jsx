@@ -7,7 +7,7 @@ import {
   Plus,
 } from "lucide-react";
 
-import logo from "../assets/logo/logo-dark.svg";
+import logo from "../assets/logo/logo-dark.png";
 
 const workspaceItems = [
   {

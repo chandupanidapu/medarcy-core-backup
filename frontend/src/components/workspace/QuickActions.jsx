@@ -11,33 +11,33 @@ import {
 const actions = [
   {
     icon: Stethoscope,
-    title: "Patient Analysis",
-    description: "Analyze symptoms, history and clinical findings.",
+    title: "Patient Assessment",
+    description: "Analyze symptoms, history and examination findings.",
   },
   {
     icon: Brain,
     title: "Differential Diagnosis",
-    description: "Generate ranked evidence-based differentials.",
+    description: "Generate prioritized evidence-based differentials.",
   },
   {
     icon: BookOpen,
-    title: "Evidence Explorer",
-    description: "Search guidelines, PubMed and references.",
+    title: "Evidence Search",
+    description: "Search guidelines, PubMed and clinical references.",
   },
   {
     icon: Pill,
-    title: "Drug Intelligence",
-    description: "Interactions, dosing and contraindications.",
+    title: "Medication Review",
+    description: "Review dosing, interactions and contraindications.",
   },
   {
     icon: Microscope,
-    title: "Research Assistant",
-    description: "Summarize papers and generate reviews.",
+    title: "Research Support",
+    description: "Summarize studies and medical literature.",
   },
   {
     icon: ScanSearch,
-    title: "Imaging AI",
-    description: "Interpret radiology, ECG and uploaded images.",
+    title: "Imaging Review",
+    description: "Interpret radiology, ECG and uploaded studies.",
   },
 ];
 
@@ -46,42 +46,34 @@ function QuickActions() {
     <section className="quick-actions-section">
 
       <div className="section-header">
-
-        <h2>Quick Actions</h2>
-
-        <span>Choose a clinical workflow</span>
-
+        <h2>Clinical Workflows</h2>
+        <span>Start a structured clinical task</span>
       </div>
 
       <div className="quick-grid">
 
-        {actions.map((item, index) => {
+        {actions.map((item) => {
 
           const Icon = item.icon;
 
           return (
 
             <button
-              key={index}
+              key={item.title}
               className="quick-card"
             >
 
               <div className="quick-icon">
-
-                <Icon size={26} />
-
+                <Icon size={20} />
               </div>
 
               <div className="quick-content">
-
                 <h3>{item.title}</h3>
-
                 <p>{item.description}</p>
-
               </div>
 
               <ChevronRight
-                size={20}
+                size={18}
                 className="quick-arrow"
               />
 

@@ -6,10 +6,10 @@ function Conversation({ messages, loading }) {
 
     <section className="chat-window">
 
-      {messages.map((msg, index) => (
+      {messages.map((msg) => (
 
         <MessageBubble
-          key={index}
+          key={msg.id ?? `${msg.sender}-${msg.message}`}
           sender={msg.sender}
           message={msg.message}
         />
@@ -19,7 +19,11 @@ function Conversation({ messages, loading }) {
       {loading && (
 
         <div className="loading">
-          Thinking...
+
+          <div className="loading-spinner"></div>
+
+          <span>Analyzing clinical evidence...</span>
+
         </div>
 
       )}

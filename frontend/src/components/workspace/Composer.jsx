@@ -14,7 +14,7 @@ function Composer() {
     <section className="workspace-composer">
 
       <textarea
-        placeholder="Describe a patient, paste laboratory values, upload imaging, ECG findings, or ask a clinical question..."
+        placeholder="Describe the patient, paste laboratory values, upload reports or imaging, or ask a clinical question..."
       />
 
       <div className="composer-toolbar">
@@ -22,39 +22,46 @@ function Composer() {
         <div className="composer-left">
 
           <button className="tool-btn">
-            <Paperclip size={18}/>
-            <span>Attach</span>
+            <Paperclip size={16}/>
+            Attach
           </button>
 
           <button className="tool-btn">
-            <FileText size={18}/>
-            <span>PDF</span>
+            <FileText size={16}/>
+            PDF
           </button>
 
           <button className="tool-btn">
-            <Image size={18}/>
-            <span>Image</span>
+            <Image size={16}/>
+            Image
           </button>
 
           <button className="tool-btn">
-            <Activity size={18}/>
-            <span>ECG</span>
-          </button>
-
-          <button className="tool-btn">
-            <Mic size={18}/>
-            <span>Voice</span>
+            <Activity size={16}/>
+            ECG
           </button>
 
         </div>
 
-        <button className="analyze-btn">
+        <div
+          style={{
+            display: "flex",
+            gap: "10px",
+            alignItems: "center"
+          }}
+        >
 
-          Analyze
+          <button className="tool-btn">
+            <Mic size={16}/>
+            Voice
+          </button>
 
-          <Send size={18}/>
+          <button className="analyze-btn">
+            Analyze
+            <Send size={16}/>
+          </button>
 
-        </button>
+        </div>
 
       </div>
 

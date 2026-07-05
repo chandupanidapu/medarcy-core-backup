@@ -1,5 +1,5 @@
-import Workspace from "../workspace/Workspace";
-import Conversation from "../conversation/Conversation";
+import Workspace from "./workspace/Workspace";
+import Conversation from "./conversation/Conversation";
 
 function MainContent({ messages, loading }) {
   if (!messages || messages.length === 0) {
