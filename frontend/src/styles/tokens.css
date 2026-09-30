@@ -18,58 +18,76 @@
   --danger: #DC2626;
 
   /* ===========================================================
-     SURFACE COLORS
-  =========================================================== */
+   SURFACE COLORS
+=========================================================== */
 
-  --background: #F8FAFC;
+/* Light */
+--background: #F8FAFC;
+--surface: #FFFFFF;
+--surface-secondary: #F1F5F9;
+--surface-tertiary: #E2E8F0;
 
-  --surface: #FFFFFF;
-
-  --surface-secondary: #F1F5F9;
-
-  --surface-tertiary: #E2E8F0;
-
-  /* ===========================================================
-     TEXT COLORS
-  =========================================================== */
-
-  --text: #0F172A;
-
-  --text-secondary: #475569;
-
-  --text-muted: #64748B;
-
-  --text-disabled: #94A3B8;
-
-  --text-inverse: #FFFFFF;
+/* Dark */
+--surface-content: #111827;
+--surface-elevated: #1E293B;
+--surface-hover: #273449;
 
   /* ===========================================================
-     BORDER COLORS
-  =========================================================== */
+   TEXT COLORS
+=========================================================== */
 
-  --border: #E2E8F0;
+/* Light surfaces (future use) */
+--text-dark: #0F172A;
+--text-secondary-dark: #475569;
+--text-muted-dark: #64748B;
+--text-disabled-dark: #94A3B8;
 
-  --border-hover: #CBD5E1;
+/* Dark application (current UI) */
+--text: #F8FAFC;
+--text-secondary: #CBD5E1;
+--text-muted: #94A3B8;
+--text-disabled: #64748B;
 
-  --border-focus: #2563EB;
+--text-inverse: #FFFFFF;
+
+ /* ===========================================================
+   BORDER COLORS
+=========================================================== */
+
+--border: #334155;
+--border-hover: #475569;
+--border-focus: #2563EB;
+
+--border-light: #E2E8F0;
+--border-light-hover: #CBD5E1; 
+
+/* ===========================================================
+   DARK BORDERS
+=========================================================== */
+
+--border-subtle: rgba(255,255,255,.08);
+
+--border-medium: rgba(255,255,255,.12);
+
+--border-strong: rgba(255,255,255,.18);
 
   /* ===========================================================
-     BORDER RADIUS
-  =========================================================== */
+   BORDER RADIUS
+=========================================================== */
 
-  --radius-xs: 10px;
+--radius-xs: 6px;
 
-  --radius-sm: 14px;
+--radius-sm: 10px;
 
-  --radius-md: 18px;
+--radius-md: 12px;
 
-  --radius-lg: 24px;
+--radius-lg: 14px;
 
-  --radius-xl: 32px;
+--radius-xl: 18px;
 
-  --radius-2xl: 40px;
+--radius-2xl: 24px;
 
-  --radius-full: 9999px;
+--radius-full: 999px;
 
   /* ===========================================================
      SHADOWS
@@ -114,6 +132,42 @@
 
   --space-10: 64px;
 
+  --space-11: 80px;
+
+  /* ===========================================================
+   TYPOGRAPHY
+=========================================================== */
+
+--font-label: 11px;
+
+--font-caption: 13px;
+
+--font-small: 14px;
+
+--font-body: 15px;
+
+--font-body-lg: 16px;
+
+--font-section: 20px;
+
+--font-page: 28px;
+
+--font-hero: 34px;
+
+/* ===========================================================
+   ICONS
+=========================================================== */
+
+--icon-xs: 16px;
+
+--icon-sm: 18px;
+
+--icon-md: 20px;
+
+--icon-lg: 24px;
+
+--icon-xl: 32px;
+
   /* ===========================================================
      TRANSITIONS
   =========================================================== */
@@ -125,13 +179,58 @@
   --transition-slow: .4s ease;
 
   /* ===========================================================
-     LAYOUT
-  =========================================================== */
+   ANIMATIONS
+=========================================================== */
 
-  --sidebar-width: 280px;
+--animation-fast: .25s;
 
-  --header-height: 72px;
+--animation: .45s;
 
-  --content-max-width: 1240px;
+--animation-slow: .65s;
+
+/* ===========================================================
+   Z-INDEX
+=========================================================== */
+
+--z-base: 1;
+
+--z-dropdown: 100;
+
+--z-sticky: 200;
+
+--z-overlay: 500;
+
+--z-modal: 1000;
+
+--z-toast: 1100;
+
+--z-tooltip: 1200;
+
+/* ===========================================================
+   ACCESSIBILITY
+=========================================================== */
+
+--focus-ring: 0 0 0 3px rgba(37,99,235,.25);
+
+--focus-ring-offset: 2px;
+
+  /* ===========================================================
+   LAYOUT
+=========================================================== */
+
+--sidebar-width: 250px;
+
+--header-height: 88px;
+
+--content-max-width: 1180px;
+
+--page-padding-x: 32px;
+
+--page-padding-y: 24px;
+
+--shell-background: #0B1220;
+
+--content-background: #0F172A;
 
 }
+

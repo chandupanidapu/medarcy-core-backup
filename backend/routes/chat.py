@@ -1,8 +1,8 @@
 from fastapi import APIRouter, HTTPException
 
-from models.request import ChatRequest
-from models.response import ChatResponse
-from services.chat_service import chat_service
+from backend.models.request import ChatRequest
+from backend.models.response import ChatResponse
+from backend.services.chat_service import chat_service
 
 router = APIRouter(
     prefix="/chat",
@@ -22,9 +22,7 @@ async def chat(request: ChatRequest):
     """
 
     try:
-        response = await chat_service.generate_response(
-            request.prompt
-        )
+        response = await chat_service.generate_response(request.prompt)
 
         return ChatResponse(
             provider="default",

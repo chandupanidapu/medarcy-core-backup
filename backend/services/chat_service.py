@@ -1,4 +1,4 @@
-from llm.router import router as llm_router
+from backend.llm.router import router as llm_router
 
 
 class ChatService:

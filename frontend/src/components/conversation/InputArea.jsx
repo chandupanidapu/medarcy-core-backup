@@ -12,8 +12,8 @@ function InputArea({
       <div className="composer">
 
         <textarea
-          rows={3}
-          placeholder="Describe a patient, symptoms, laboratory findings, imaging results, or a research question..."
+          rows={1}
+          placeholder="Describe the clinical presentation, paste laboratory values, upload investigations, or ask an evidence-based clinical question..."
           value={question}
           onChange={(e) => setQuestion(e.target.value)}
         />
@@ -25,17 +25,17 @@ function InputArea({
             <button
               type="button"
               className="tool-btn"
-              title="Attach (Coming Soon)"
+              title="Attach Clinical Files"
             >
-              <Paperclip size={18} />
+              <Paperclip size={16} />
             </button>
 
             <button
               type="button"
               className="tool-btn"
-              title="Voice (Coming Soon)"
+              title="Voice Dictation"
             >
-              <Mic size={18} />
+              <Mic size={16} />
             </button>
 
           </div>
@@ -47,13 +47,13 @@ function InputArea({
           >
             {loading ? (
               <>
-                <Loader2 size={18} className="spin" />
-                Analyzing...
+                <Loader2 size={16} className="spin" />
+                Analyzing Evidence...
               </>
             ) : (
               <>
-                Analyze
-                <Send size={18} />
+                Analyze Case
+                <Send size={16} />
               </>
             )}
           </button>

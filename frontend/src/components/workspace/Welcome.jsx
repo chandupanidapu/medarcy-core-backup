@@ -10,18 +10,18 @@ function Welcome() {
     <section className="workspace-hero">
 
       <div className="hero-greeting">
-        {greeting}, Doctor
+        👋 {greeting}, Doctor
       </div>
 
-      <h1 className="hero-title">
-        Clinical Intelligence Workspace
-      </h1>
+      <h2 className="hero-title">
+        What clinical problem would you like to analyze today?
+      </h2>
 
       <p className="hero-description">
         Analyze patient cases, interpret laboratory findings,
-        review medical literature, generate differential diagnoses,
-        and access evidence-based recommendations from a single,
-        intelligent clinical workspace.
+        generate differential diagnoses, review medical evidence,
+        and receive evidence-based clinical decision support from a
+        unified clinical intelligence workspace.
       </p>
 
     </section>

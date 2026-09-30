@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from models.health import HealthResponse
+from backend.models.health import HealthResponse
 
 router = APIRouter(
     prefix="/health",

@@ -1,4 +1,4 @@
-from llm.base import BaseLLM
+from backend.llm.base import BaseLLM
 
 
 class OpenAIProvider(BaseLLM):
