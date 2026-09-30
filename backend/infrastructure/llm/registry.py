@@ -1,5 +1,4 @@
-﻿from backend.infrastructure.llm.exceptions import ProviderNotRegisteredError
-"""
+﻿"""
 Medarcy Enterprise Clinical Intelligence Platform
 
 LLM Provider Registry
@@ -12,6 +11,8 @@ providers throughout the application.
 """
 
 from __future__ import annotations
+
+from backend.infrastructure.llm.exceptions import ProviderNotRegisteredError
 
 from typing import Dict
 
