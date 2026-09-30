@@ -1,7 +1,7 @@
 import google.generativeai as genai
 
-from core.config import settings
-from llm.base import BaseLLM
+from backend.core.config import settings
+from backend.llm.base import BaseLLM
 
 
 class GeminiProvider(BaseLLM):

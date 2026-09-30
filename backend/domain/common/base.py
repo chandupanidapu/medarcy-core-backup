@@ -16,10 +16,10 @@ from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from uuid import uuid4
 
-
 # ============================================================
 # ENTITY
 # ============================================================
+
 
 @dataclass(slots=True)
 class Entity(ABC):
@@ -29,7 +29,10 @@ class Entity(ABC):
     Entities have identity and lifecycle.
     """
 
-    id: str = field(default_factory=lambda: str(uuid4()))
+    id: str = field(
+        default_factory=lambda: str(uuid4()),
+        kw_only=True,
+    )
 
     def __hash__(self) -> int:
         return hash(self.id)
@@ -44,6 +47,7 @@ class Entity(ABC):
 # ============================================================
 # AGGREGATE ROOT
 # ============================================================
+
 
 @dataclass(slots=True)
 class AggregateRoot(Entity):
@@ -62,6 +66,7 @@ class AggregateRoot(Entity):
 # VALUE OBJECT
 # ============================================================
 
+
 @dataclass(frozen=True, slots=True)
 class ValueObject(ABC):
     """
@@ -77,6 +82,7 @@ class ValueObject(ABC):
 # AUDITABLE ENTITY
 # ============================================================
 
+
 @dataclass(slots=True)
 class AuditableEntity(Entity):
     """
@@ -84,11 +90,13 @@ class AuditableEntity(Entity):
     """
 
     created_at: datetime = field(
-        default_factory=lambda: datetime.now(timezone.utc)
+        default_factory=lambda: datetime.now(timezone.utc),
+        kw_only=True,
     )
 
     updated_at: datetime = field(
-        default_factory=lambda: datetime.now(timezone.utc)
+        default_factory=lambda: datetime.now(timezone.utc),
+        kw_only=True,
     )
 
     def touch(self) -> None:

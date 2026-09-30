@@ -1,8 +1,8 @@
-from core.config import settings
+from backend.core.config import settings
 
-from llm.gemini import GeminiProvider
-from llm.openai import OpenAIProvider
-from llm.claude import ClaudeProvider
+from backend.llm.claude import ClaudeProvider
+from backend.llm.gemini import GeminiProvider
+from backend.llm.openai import OpenAIProvider
 
 
 class LLMRouter:
