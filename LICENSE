@@ -1,21 +1,44 @@
-MIT License
+Copyright (c) 2026 Chandrasekhar Panidapu. All rights reserved.
 
-Copyright (c) 2026 Panidapu Chandrasekhar
+MEDARCY PROPRIETARY SOFTWARE LICENSE
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+This software and its source code are proprietary and confidential
+intellectual property of Chandrasekhar Panidapu ("Copyright Holder").
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+The source code may be publicly accessible for purposes of
+transparency, inspection, academic review, and evaluation.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Except where expressly permitted in writing by the Copyright Holder,
+no permission is granted to:
+
+- use this software for commercial purposes;
+- copy or reproduce the software;
+- modify or create derivative works;
+- redistribute or sublicense the software;
+- sell, lease, or otherwise commercialize the software;
+- incorporate the software into another product or service;
+- use the Medarcy name, trademarks, logos, or branding.
+
+Viewing the source code through the repository hosting platform does
+not constitute a license to use, reproduce, modify, distribute,
+commercialize, or create derivative works from the software.
+
+Third-party libraries, frameworks, models, datasets, and other
+dependencies included or referenced by this project remain subject
+to their respective licenses and terms. This license does not
+supersede those third-party licenses.
+
+The Medarcy name, trademarks, logos, visual identity, and related
+branding are not licensed under this license.
+
+Any permission beyond the rights expressly stated above requires
+prior written authorization from the Copyright Holder.
+
+THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE
+LAW.
+
+Nothing in this license grants permission to use Medarcy for clinical
+decision-making, diagnosis, treatment, or other regulated healthcare
+activities without appropriate authorization, validation, oversight,
+and compliance with applicable laws and regulations.
